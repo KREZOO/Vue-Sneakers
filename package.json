@@ -1,12 +1,15 @@
 {
+  "homepage": "https://KREZOO.github.io/Vue-Sneakers/",
   "name": "vue-sneakers",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
     "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.35",
     "sass": "^1.71.0",
     "tailwindcss": "^3.4.1",
